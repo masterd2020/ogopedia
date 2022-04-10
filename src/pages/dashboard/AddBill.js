@@ -1,8 +1,12 @@
+import DashboardLayout from '../../components/layout/index';
+
 const AddBill = () => {
   return (
-    <div>
-      <h1>AddBill</h1>
-    </div>
+    <DashboardLayout>
+      <div className="">
+        {/* <h1>AddBill 111111</h1> */}
+      </div>
+    </DashboardLayout>
   );
 }
 
