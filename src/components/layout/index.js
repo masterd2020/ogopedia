@@ -70,7 +70,6 @@ const DashboardLayout = ({ children }) => {
         </div>
 
         {/** Main Content */}
-        {/* <div className="lg:w-5/6 lg:flex flex-1 lg:overflow-y-scroll lg:relative  lg:bg-white">{children}</div> */}
         <div className="lg:w-full lg:flex lg:overflow-y-scroll lg:relative lg:mt-20 lg:bg-white lg:rounded-lg">{children}</div>
       </div>
 
@@ -80,7 +79,7 @@ const DashboardLayout = ({ children }) => {
 
 
 const TabList = ({tab, toggleTab, currentTab, i}) => {
-  const {name, icon, image} = tab;
+  const {name, image} = tab;
 
   return (
     <div className='lg:text-gray-500 lg:mb-2' key={name}>
