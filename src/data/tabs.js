@@ -73,7 +73,40 @@ const tabs = [
     name: 'Analytics',
     image: analytic,
     link: '/dashboard/analytics',
-    sub: []
+    sub: [
+      {
+        name: 'View Report',
+        link: '/dashboard/analytics/view-report',
+      },
+      {
+        name: 'To-Do',
+        link: '/dashboard/analytics/todo',
+      },
+      {
+        name: 'Upload Docs',
+        link: '/dashboard/analytics/upload-docs',
+      },
+      {
+        name: 'Chat',
+        link: '/dashboard/analytics/chat',
+      },
+      {
+        name: 'Schedule',
+        link: '/dashboard/analytics/schedule',
+      },
+      {
+        name: 'Message Board',
+        link: '/dashboard/analytics/message-board',
+      },
+      {
+        name: 'Make Payments',
+        link: '/dashboard/analytics/make-payments',
+      },
+      {
+        name: 'Billing',
+        link: '/dashboard/analytics/billing',
+      },
+    ]
   },
   {
     name: 'Settings',
