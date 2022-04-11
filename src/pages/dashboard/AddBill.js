@@ -1,6 +1,6 @@
 import TextField from '@material-ui/core/TextField';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+// import InputAdornment from '@material-ui/core/InputAdornment';
+// import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 
@@ -14,8 +14,8 @@ const AddBill = () => {
         <div className='lg:mt-5'>
           <div className='lg:grid lg:grid-cols-3 lg:gap-3'>
             <CustomSelect label='Vendor' />
-            <CustomTextField label='Bill Number' />
-            <CustomTextField label='Bill Number' />
+            <CustomTextField label='Date' type='date' />
+            <CustomTextField label='Bill #' />
           </div>
         </div>
       </div>
@@ -44,11 +44,11 @@ const CustomSelect = (props) => {
 
 const CustomTextField = (props) => {
   const {label} = props;
-
+console.log(props.span)
   return (
-    <div className='w-3/5 text-gray-300 mb-4'>
+    <div className={props.span ? `w-3/5 text-gray-300 mb-4 ${props.span}` : `w-3/5 text-gray-300 mb-4`}>
       <label className='block -mb-3 font-semibold'>{label}</label><br />
-      <TextField  placeholder={`Enter your ${label}`} {...props} fullWidth={true} variant='outlined'/>
+      <TextField  {...props} fullWidth={true} variant='outlined'/>
     </div>
   )
 }
